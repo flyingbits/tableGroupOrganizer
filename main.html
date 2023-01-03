@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chem Group Manager</title>
+
+    <style>
+        body {
+
+        }
+
+        #tab-dir {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            place-content: center;
+        }
+
+        #tab-info-dir {
+            margin-top: 30px;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        .tab {
+            width: 160px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            margin-top: auto;
+            border: 1px solid black;
+            user-select: none;
+        }
+
+        .tab:hover {
+            background-color: lightblue;
+        }
+
+        .tab.active {
+            background-color: lime;
+        }
+
+        .tab-info {
+            display: none;
+        }
+
+        .tab-info.active {
+            display: block;
+        }
+
+        #student-list {
+            background-color: black;
+            width: 100%;
+        }
+
+        #student-list tr {
+            background-color: white;
+        }
+
+        #student-list input {
+            display: none;
+        }
+
+        #student-list p {
+            display: block;
+        }
+
+        #student-list .edit-student-name input {
+            display: block;
+        }
+
+        #student-list .edit-student-name p {
+            display: none;
+        }
+    </style>
+
+    <script defer type="text/javascript" src="fs.js"></script>
+    <script defer type="text/javascript" src="gm.js"></script>
+    <script defer type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div style="display: inline-block; margin: auto;">
+        <div id="tab-dir">
+        </div>
+
+        <div id="tab-info-dir">
+        </div>
+    </div>
+</body>
+</html>
